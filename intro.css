@@ -1,0 +1,374 @@
+@font-face {
+  font-family: h1font;
+  src: url(images/Harukaze.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: h2font;
+  src: url(images/Zenzai\ Itachi.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: h3font;
+  src: url(images/Russian.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: h4font;
+  src: url(images/AkiraDEMO.otf);
+}
+@font-face {
+  font-family: h5font;
+  src: url(images/Sigokae\ Demo.otf);
+}
+@font-face {
+  font-family: h6font;
+  src: url(images/JANSINA.ttf);
+}
+@font-face {
+  font-family: h7font;
+  src: url(images/Hayamichi\ Regular.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.back {
+  background-image: url(images/luxa.org-opacity-changed-White\ Fabric\ Texture.jpeg);
+  background-attachment: fixed;
+}
+.navbar {
+  justify-items: flex;
+  position: fixed;
+  background-image: url(images/pngtree-high-resolution-photo-of-grungy-or-vintage-textured-red-old-paper-image_13817090.png);
+  opacity: 97%;
+  margin-top: 0px;
+  height: 50px;
+  width: 100%;
+  background-size: cover;
+  top: 0px;
+}
+.set {
+  display: inline-block;
+  text-align: left;
+  margin-top: 11cm;
+  top: 100px;
+}
+#hey {
+  font-family: h1font;
+  font-size: 3.5em;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 2cm;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.705);
+}
+#name {
+  font-family: h2font;
+  font-size: 3em;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 2.4cm;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.705);
+}
+#moto {
+  font-family: h3font;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 3.2cm;
+}
+#code {
+  color: rgb(143, 60, 27);
+  text-shadow: 2px 2px 4px rgba(143, 60, 27);
+}
+#badal {
+  position: absolute;
+  padding: 0;
+  margin-left: 290px;
+  top: 100px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.705);
+  opacity: 200%;
+  z-index: -2;
+}
+#lamp0{
+  position: absolute;
+  object-fit: contain;
+  width: 200px;
+  height: 1110px;
+  padding: 0;
+  top: -500px;
+  right: 141px;
+  float: right;
+  opacity: 0%;
+  z-index: -2;
+}
+#lamp {
+  position: fixed;
+  object-fit: contain;
+  width: 200px;
+  height: 1110px;
+  padding: 0;
+  top: -500px;
+  right: 141px;
+  float: right;
+  opacity: 80%;
+  z-index: -2;
+}
+#lamp1 {
+  position: absolute;
+  padding: 0;
+  width: 178px;
+  height: 556px;
+  object-fit: contain;
+  float: right;
+  top: 800px;
+  right: 150px;
+  opacity: 0%;
+  z-index: -2;
+}
+#lamp2 {
+  position: absolute;
+  padding: 0;
+  width: 178px;
+  height: 556px;
+  object-fit: contain;
+  top: 1750px;
+  right: 150px;
+  opacity: 0%;
+  z-index: -2;
+}
+#lamp3 {
+  position: absolute;
+  padding: 0;
+  width: 178px;
+  height: 556px;
+  object-fit: contain;
+  top: 2750px;
+  right: 150px;
+  opacity: 0%;
+  z-index: -2;
+}
+#lamp4 {
+  position: absolute;
+  padding: 0;
+  width: 178px;
+  height: 556px;
+  object-fit: contain;
+  top: 3660px;
+  right: 150px;
+  opacity: 0%;
+  z-index: -2;
+}
+#matter1 {
+  position: absolute;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  width: 766px;
+  top: 950px;
+  left: 100px;
+  opacity: 40%;
+  z-index: -5;
+}
+#matter2 {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  width: 766px;
+  object-fit: contain;
+  top: 1900px;
+  left: 100px;
+  z-index: -5;
+  opacity: 40%;
+}
+#matter3 {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  width: 766px;
+  object-fit: contain;
+  top: 2900px;
+  left: 100px;
+  z-index: -5;
+  opacity: 40%;
+}
+#matter4 {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  width: 766px;
+  object-fit: contain;
+  top: 3800px;
+  left: 100px;
+  z-index: -5;
+  opacity: 40%;
+}
+#rope1 {
+  position: absolute;
+  width: 1510px;
+  height: 30px;
+  top: 731px;
+  opacity: 0%;
+  z-index: -4;
+}
+#rope2 {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  width: 1510px;
+  height: 30px;
+  top: 4500px;
+  opacity: 100%;
+  z-index: -4;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  justify-content: space-around;
+  display: flex;
+}
+.navbar a {
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  padding: 7px 8px;
+  color: rgb(232, 223, 223);
+  font-family: h7font;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+}
+.about_me .head {
+  padding: 0px;
+  position: absolute;
+  top: 876px;
+  left: 404px;
+  font-family: h7font;
+  font-size: 3.5em;
+  color: rgb(62, 33, 33);
+}
+.skills .head {
+  position: absolute;
+  top: 1821px;
+  left: 404px;
+  font-family: h7font;
+  font-size: 3.5em;
+  color: rgb(62, 33, 33);
+}
+.projects .head {
+  position: absolute;
+  top: 2821px;
+  left: 404px;
+  font-family: h7font;
+  font-size: 3.5em;
+  color: rgb(62, 33, 33);
+}
+.contacts .head {
+  position: absolute;
+  top: 3716px;
+  left: 404px;
+  font-family: h7font;
+  font-size: 3.5em;
+  color: rgb(62, 33, 33);
+}
+.about_me .head,
+.para,
+.skills .head,
+.para,
+.projects .head,
+.para,
+.contacts .head,
+.para {
+  z-index: -3;
+}
+.about_me .para {
+  position: absolute;
+  top: 1026px;
+  left: 153px;
+  font-family: h7font;
+  font-size: 2.5em;
+  margin-right: 649px;
+}
+.skills .para {
+  position: absolute;
+  top: 1975px;
+  left: 153px;
+  font-family: h7font;
+  font-size: 2.5em;
+  margin-right: 649px;
+}
+.projects .para {
+  position: absolute;
+  top: 2975px;
+  left: 153px;
+  font-family: h7font;
+  font-size: 2.5em;
+  margin-right: 649px;
+}
+.contacts .para {
+  position: absolute;
+  top: 3882px;
+  left: 153px;
+  font-family: h7font;
+  font-size: 2.5em;
+  margin-right: 649px;
+}
+.navbar a {
+  transition: all 0.01s ease;
+}
+.navbar li a:hover {
+  justify-items: auto;
+  color: bisque;
+  font-size: 32px;
+}
+.navbar li a:active{
+  text-decoration: underline;
+}
+@keyframes cloudLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+#name:hover {
+  font-size: 3.5em;
+  color: rgb(58, 54, 54);
+  margin-left: 73.4px;
+}
+#bg{
+width: 100%;
+position: fixed;
+top: 0px;
+opacity: 30%;
+z-index: -7;
+}
+#fuji{
+  position: absolute;
+  top: 500px;
+  right: 0px;
+  opacity: 20%;
+  z-index: -8;
+}
+.footer{
+  position: absolute;
+  top: 119.5cm;
+  width: 100%;
+  height: 30%;
+  opacity: 97%;
+  background-image: url(images/redpage.png);
+  background-size: cover;
+}
+.footer #headfoot{
+  position: absolute;
+  bottom: 150px;
+  margin-left: 38%;
+  color: rgb(37, 32, 15); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.705);
+}
