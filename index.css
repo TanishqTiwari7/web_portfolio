@@ -40,6 +40,13 @@ html {
   background-image: url(images/luxa.org-opacity-changed-White\ Fabric\ Texture.jpeg);
   background-attachment: fixed;
 }
+#bg {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  opacity: 30%;
+  z-index: -7;
+}
 .navbar {
   justify-items: flex;
   position: fixed;
@@ -50,6 +57,35 @@ html {
   width: 100%;
   background-size: cover;
   top: 0px;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  justify-content: space-around;
+  display: flex;
+}
+.navbar a {
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  padding: 7px 8px;
+  color: rgb(232, 223, 223);
+  font-family: h7font;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+}
+.navbar a {
+  transition: all 0.01s ease;
+}
+.navbar li a:hover {
+  justify-items: auto;
+  color: bisque;
+  font-size: 32px;
+}
+.navbar li a:active {
+  text-decoration: underline;
 }
 .set {
   display: inline-block;
@@ -73,6 +109,11 @@ html {
   margin-left: 2.4cm;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.705);
 }
+#name:hover {
+  font-size: 3.5em;
+  color: rgb(58, 54, 54);
+  margin-left: 73.4px;
+}
 #moto {
   font-family: h3font;
   margin: 0px;
@@ -92,7 +133,24 @@ html {
   opacity: 200%;
   z-index: -2;
 }
-#lamp0{
+@keyframes cloudLoop {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+#fuji {
+  position: absolute;
+  top: 500px;
+  right: 0px;
+  opacity: 20%;
+  z-index: -8;
+}
+#lamp0 {
   position: absolute;
   object-fit: contain;
   width: 200px;
@@ -223,24 +281,6 @@ html {
   opacity: 100%;
   z-index: -4;
 }
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  justify-content: space-around;
-  display: flex;
-}
-.navbar a {
-  display: flex;
-  text-decoration: none;
-  text-align: center;
-  padding: 7px 8px;
-  color: rgb(232, 223, 223);
-  font-family: h7font;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.705);
-  font-size: 30px;
-}
 .about_me .head {
   padding: 0px;
   position: absolute;
@@ -287,76 +327,36 @@ html {
 .about_me .para {
   position: absolute;
   top: 1026px;
-  left: 153px;
+  left: 147px;
   font-family: h7font;
-  font-size: 2.5em;
-  margin-right: 649px;
+  font-size: 2em;
+  margin-right: 666px;
 }
 .skills .para {
   position: absolute;
   top: 1975px;
-  left: 153px;
+  left: 147px;
   font-family: h7font;
-  font-size: 2.5em;
-  margin-right: 649px;
+  font-size: 2em;
+  margin-right: 666px;
 }
 .projects .para {
   position: absolute;
-  top: 2975px;
-  left: 153px;
+  top: 2953px;
+  left: 147px;
   font-family: h7font;
-  font-size: 2.5em;
-  margin-right: 649px;
+  font-size: 2em;
+  margin-right: 666px;
 }
 .contacts .para {
   position: absolute;
   top: 3882px;
-  left: 153px;
+  left: 147px;
   font-family: h7font;
-  font-size: 2.5em;
-  margin-right: 649px;
+  font-size: 2em;
+  margin-right: 666px;
 }
-.navbar a {
-  transition: all 0.01s ease;
-}
-.navbar li a:hover {
-  justify-items: auto;
-  color: bisque;
-  font-size: 32px;
-}
-.navbar li a:active{
-  text-decoration: underline;
-}
-@keyframes cloudLoop {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-#name:hover {
-  font-size: 3.5em;
-  color: rgb(58, 54, 54);
-  margin-left: 73.4px;
-}
-#bg{
-width: 100%;
-position: fixed;
-top: 0px;
-opacity: 30%;
-z-index: -7;
-}
-#fuji{
-  position: absolute;
-  top: 500px;
-  right: 0px;
-  opacity: 20%;
-  z-index: -8;
-}
-.footer{
+.footer {
   position: absolute;
   top: 119.5cm;
   width: 100%;
@@ -365,10 +365,22 @@ z-index: -7;
   background-image: url(images/redpage.png);
   background-size: cover;
 }
-.footer #headfoot{
+.footer #headfoot {
   position: absolute;
   bottom: 150px;
   margin-left: 38%;
-  color: rgb(37, 32, 15); 
+  color: rgb(37, 32, 15);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.705);
+}
+.links1 {
+  position: absolute;
+  left: 280px;
+  color: rgb(37, 32, 15);
+}
+.links2 {
+  position: absolute;
+  left: 50%;
+  color: rgb(37, 32, 15);
+  margin-top: 80px;
+  size: 2em;
 }
